@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Item Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row >
+      <ion-label>{{itemDetail.name}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label>{{itemDetail.quantity}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label> {{formatDate}} </ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label> Total Amount :  ${{totalamount}} </ion-label>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

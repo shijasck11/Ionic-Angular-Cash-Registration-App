@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of purchaseList"> 
+      <ion-grid>
+        <ion-item button (click)="itemClick(item.name)">
+          <ion-col>
+            <ion-row>
+              <ion-label >{{item.name}}</ion-label>
+            </ion-row>
+            <ion-row>
+              <ion-label>{{item.quantity}}</ion-label>
+            </ion-row>
+          </ion-col>
+  
+        </ion-item>
+        
+      </ion-grid>     
+    
+   
+    </div>
+  </ion-list>
+
+</ion-content>

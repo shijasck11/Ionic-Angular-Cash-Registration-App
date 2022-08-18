@@ -1,0 +1,7 @@
+{
+  "name": "CashRegisterApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

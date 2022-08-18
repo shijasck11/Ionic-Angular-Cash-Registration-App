@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Manager</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-align-items-end">
+      <ion-col offset="4">
+        <ion-button class="first" (click)="toHistory()">History</ion-button>
+      </ion-col>      
+    </ion-row>
+    <ion-row>
+      <ion-col offset="3.9">
+        <ion-button class="second" (click)="toRestock()">Restock</ion-button>
+      </ion-col> 
+    </ion-row>
+    <ion-row>
+      <ion-col offset="2.5">
+        <ion-button class="third" (click)="addNewProduct()">Add New Product</ion-button>
+      </ion-col> 
+    </ion-row>
+  
+    
+      
+ 
+  </ion-grid>
+
+</ion-content>

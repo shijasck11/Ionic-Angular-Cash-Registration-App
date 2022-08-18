@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button  (click)="addProduct()" >
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="toManager()"><ion-icon name="close-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Add New Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>New Product</ion-item>
+  <form [formGroup]="form">
+    <ion-item>
+      <ion-label>Product Name</ion-label>
+      <ion-input type="text" [(ngModel)]="productCode" formControlName="productName" placeholder="Enter Product Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Price</ion-label>
+      <ion-input type="number" [(ngModel)]="productPrice" formControlName="productPrice" placeholder="Enter Product Price"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Quantity</ion-label>
+      <ion-input type="number" [(ngModel)]="productQuantity" formControlName="productQuantity" placeholder="Enter Product Quantity"></ion-input>
+    </ion-item>
+  </form>
+
+
+</ion-content>
